@@ -37,8 +37,8 @@ projectURL=$githubURL$1
 git clone "$projectURL"
 
 #Uses another script, copyRake.sh, to initialize the directory
-./copyRake.sh $1
- 
+bash copyRake.sh $1
+
 #Commits the changes to Github
 cd $1
 git add .
